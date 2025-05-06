@@ -16,7 +16,22 @@ const Experience = () => {
           <p>{info.location}</p>
           <ol className="experience__responsibilities ul-tag">
             {info.responsibility.map((data, index) => (
-              <li key={index}>{data}</li>
+              <li key={index}>
+                {data.includes("http") ? (
+                  <>
+                    {data.split("https")[0]}
+                    <a
+                      href={`https${data.split("https")[1]}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {`https${data.split("https")[1]}`}
+                    </a>
+                  </>
+                ) : (
+                  data
+                )}
+              </li>
             ))}
           </ol>
         </section>

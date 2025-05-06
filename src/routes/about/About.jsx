@@ -5,7 +5,7 @@ import Certifications from "./Certifications";
 import Languages from "./Languages";
 import Stack from "./Stack";
 import Education from "./Education";
-// import Experience from "./Experience";
+import Experience from "./Experience";
 import DownloadResume from "./DownloadResume";
 import AboutMe from "./AboutMe";
 import ScrollButton from "../../helpers/ScrollToTop";
@@ -20,7 +20,7 @@ const About = () => {
       <AboutMe />
       <Stack />
       <DownloadResume />
-      {/* <Experience /> */}
+      <Experience />
       <Education />
       <Languages />
       <DownloadResume />
